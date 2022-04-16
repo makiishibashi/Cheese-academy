@@ -1,0 +1,498 @@
+@charset "utf-8";
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "Open sans", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+.title_section {
+	background: url(../img/mainbg.png);
+	background-size: cover;
+	background-position: center;
+	height: 250px;
+	color: #fffafa;
+}
+.title_text{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.title_first{
+	font-size: 48px;
+}
+
+.title_second{
+	font-size: 36px;
+}
+
+.margin_above{
+	margin-top: 120px;
+}
+
+.page_width{
+	width: 960px;
+}
+
+.navigation{
+	display:flex;
+	height: 80px;
+	align-items: center;
+}
+
+.navigation_text{
+	display:flex;
+	font-size: 21px;
+}
+	
+
+.about_text{
+	margin: 30px;
+}
+
+
+
+.course_text {
+	margin:30px;
+}
+
+.news_text {
+	margin: 30px;
+}
+
+.access_text {
+	margin: 30px;
+}
+
+.contact_text {
+	margin: 30px;
+}
+
+.about_title{
+	display: flex;
+	justify-content: center;
+	font-size: 24;
+	color:#ffd61a
+}
+
+.about_body{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.about_01{
+	margin-top: 24px;
+}
+
+.about_02{
+	margin-top: 64px;
+}
+
+.about_03 {
+	margin-top: 40px;
+}
+
+.about_04 {
+	margin-top: 80px;
+}
+
+.content {
+	width: 300px;
+	height: 300px;
+}
+
+.content {
+	width: 300px;
+	height: 300px;
+}
+
+.slider {
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	margin: 0 auto;
+
+}
+
+.slider-item {
+	width: 300px;
+	float: left;
+}
+
+img {
+	width: 100%;
+}
+
+.slider-inner {
+	width: 300%;
+	animation: slider 10s infinite ease;
+}
+
+
+.course_title{
+	display: flex;
+	justify-content: center;
+	font-size: 24;
+	color: #222222;
+	margin-top: 64px;
+}
+
+.img_news{
+	display:flex;
+}
+
+
+.img_news_text{
+	display:flex;
+}
+
+.img_course{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.course_lead{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.img_course_img01, .img_course_text01{
+	width: 50%;
+}
+
+.img_course_img01 img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	margin-top: 64px;
+}
+
+.img_course_text01{
+	display:flex;
+	justify-content: left flex-direction: column;
+}
+.img_course_text01_margin{
+	padding-left: 48px;
+	padding-right: 72px;
+}
+
+.img_course_para {
+	padding-top: 40px;
+}
+
+.img_course_img02, .img_course_text02 {
+	width: 50%;
+}
+
+.img_course_img02 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.img_course_text02 {
+	display: flex;
+	justify-content: last baseline;
+	align-items: center;
+	flex-direction: column;
+}
+.img_course_text02_margin{
+	padding-right: 48px;
+	padding-left: 72px;
+}
+
+.img_course_img03, .img_course_text03 {
+	width: 50%;
+}
+
+.img_course_img03 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.img_course_text03 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.img_course_text03_margin {
+	padding-left: 48px;
+	padding-right: 72px;
+}
+
+.news_title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 64px;
+}
+
+.news_english{
+	font-size: 24;
+	color:#ffd61a
+}
+
+.news_kana{
+	margin-bottom: 64px;
+}
+
+.padding_pizza_img{
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+.date{
+	padding-top: 32px;
+}
+
+.pizza_text{
+	padding-top: 24px;
+}
+
+.movie-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 56px;
+}
+
+.movie-text{
+	padding-bottom: 24px;
+	font-size: 24;
+	color:#ffd61a
+}
+
+.more_button{
+	display: flex;
+	justify-content: center;
+	padding-top: 56px;
+	padding-bottom: 48px;
+}
+
+button{
+	font-size: 21px;
+	background-color: #ffd61a;
+	color: #fffafa;
+	width: 298px;
+	height: 54px;
+}
+
+.access_title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 64px;
+}
+
+.access_english{
+	font-size: 24;
+	color: #222;
+	padding-bottom: 24px;
+}
+
+.company_info{
+	margin-bottom: 64px;
+}
+
+#gmap{
+	height: 500px;
+	width: 100%;
+}
+
+
+
+.access_school{
+	padding-top: 64px;
+	display: flex;
+	padding-bottom: 24px;
+}
+
+
+.access_school02{
+	padding-left: 48px;
+}
+
+.access_address{
+	display: flex;
+	padding-bottom: 24px;
+}
+
+.address01{
+	
+}
+
+.address02{
+	padding-left: 48px;
+}
+
+.access_tel{
+	display: flex;
+	padding-bottom: 24px;
+}
+
+.tel02{
+	padding-left: 48px;
+}
+.access_fax {
+	display: flex;
+	padding-bottom: 24px;
+}
+
+.fax02 {
+	padding-left: 48px;
+}
+
+.access_mail {
+	display: flex;
+	padding-bottom: 80px;
+}
+
+.mail02{
+	padding-left: 48px;
+}
+
+.access_info{
+
+}
+
+
+.contact_title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 64px;
+	}
+
+.contact_english{
+	font-size: 24;
+	color: #222;
+	padding-bottom: 24px;
+}
+
+.contact_text01{
+	padding-bottom: 64px;
+}
+
+.contact_text02{
+	padding-bottom: 32px;
+}
+
+.contact_text03{
+	padding-bottom: 80px;
+}
+
+
+.form-wrapper{
+	width: 720px;;
+	margin: auto
+}
+
+.form-inner{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 40px;
+}
+
+.form-title{
+	width: 240px;
+	padding-bottom: 24px;
+}
+
+.form-item{
+	width: 388px
+	padding-bottom: 24px;
+}
+
+.form-parts{
+	width: 328px;
+	height: 36px;
+	font-size: 24px;
+	border: solid 1px #bfbfbf;
+	padding: 8px
+}
+.form-parts01 {
+	width: 328px;
+	height: 108px;
+	font-size: 24px;
+	border: solid 1px #bfbfbf;
+	padding: 8px
+}
+
+.checkbox{
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+label{
+	font-size: 14px;
+}
+
+.submit_button{
+	padding-bottom: 120px;
+	display: flex;
+	justify-content: center;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
